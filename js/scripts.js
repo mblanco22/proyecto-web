@@ -4,9 +4,9 @@ function calc() {
   var peso = document.getElementById('peso').value.replace(/,/g, '.');;
   var altura = document.getElementById('altura').value.replace(/,/g, '.');;
 
-  // valida se os campos não estão vazios
+  // valida si los campos estan vacios
   if (peso == '' || altura == '') {
-    document.getElementById("message").innerHTML = 'preencha os campos';
+    document.getElementById("message").innerHTML = 'completa los campos';
     return false;
   }
 
