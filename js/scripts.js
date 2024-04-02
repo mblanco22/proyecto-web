@@ -14,24 +14,24 @@ function calc() {
   var resultado = (peso / (altura * altura));
   var message = '';
 
-  // verifica situação
+  // verifica situación
   if (resultado < 17) {
-    message = 'Você está muito abaixo do peso';
+    message = 'Usted esta muy por debajo de su peso';
   } else if (resultado >= 17 && resultado <= 18.49) {
-    message = 'Você está abaixo do peso';
+    message = 'Usted esta bajo de peso';
   } else if (resultado >= 18.5 && resultado <= 24.99) {
-    message = 'Seu peso está normal';
+    message = 'Su peso es normal';
   } else if (resultado >= 25 && resultado <= 29.99) {
-    message = 'Você está acima do peso';
+    message = 'Usted esta encima de su peso';
   } else if (resultado >= 30 && resultado <= 34.99) {
-    message = 'Você tem obesidade nível I';
+    message = 'Usted tiene obesidad nível I';
   } else if (resultado >= 35 && resultado <= 39.99) {
-    message = 'Você tem Obesidade nível II';
+    message = 'Usted tiene ebesidad nível II';
   } else if (resultado >= 40) {
-    message = 'Você tem Obesidade nível III';
+    message = 'Usted tiene obesidad nível III';
   }
 
   // mostra resultado
   resultado = resultado.toFixed(2).replace(/\./g, ',');
-  document.getElementById("message").innerHTML = 'Seu IMC é : ' + resultado + '<br>' + message;
+  document.getElementById("message").innerHTML = 'Su IMC es : ' + resultado + '<br>' + message;
 }
